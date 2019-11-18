@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Lab_3(Kutsyn V.)</title>
+<script language="Javascript">      
+    function img_size(w,h,b,str) { 
+        
+        var w,h,b,str;
+        document.getElementById("1").width=w; 
+        document.getElementById("1").height=h;
+        document.getElementById("1").border=b;
+        document.getElementById("1").alt=str; 
+    }       
+</script>
+</head>
+
+<body>
+	<select name="nubexSelect" size="3" multiple form="nubexForm">
+		<option onClick="img_size(100,100,0,'error1')">100x100</option>
+		<option onClick="img_size(200,200,1,'error2')">200x200</option>
+		<option onClick="img_size(300,300,2,'error3')">300x300</option>
+		<option onClick="img_size(400,400,'error4')">400x400</option>
+    </select>
+    
+    <img id="1" src="pic1.jpg" border="0" height="100px" width="100">
+
+
+   
+</body>
+</html>
